@@ -1,6 +1,6 @@
 {
     "color": true,
-    "last_id": 3,
+    "last_id": 1,
     "severity_colors": [
         "white",
         "yellow",
@@ -12,12 +12,10 @@
         "HIGH"
     ],
     "values": [
-        null,
-        null,
         {
-            "id": 3,
+            "id": 1,
             "severity": 2,
-            "content": "toto",
+            "content": "test",
             "added": "2014-12-12T22:34:07.149Z"
         }
     ]
