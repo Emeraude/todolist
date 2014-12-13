@@ -14,7 +14,13 @@ var colors = {
 
 var fs = require('fs');
 var _ = require('lodash');
-var db = require(require('path').join(__dirname, './db.json'));
+var db;
+try {
+    db = require(require('path').join(process.env.HOME, '.todolist.db.json'));
+}
+catch(e) {
+    db = require(require('path').join(__dirname, './db.json'));
+}
 
 function printBySeverity(severity) {
     _.eachRight(severity, function(i) {
@@ -89,6 +95,6 @@ for (var i = 0; i < process.argv.length; ++i) {
     }
 }
 
-fs.writeFile(require('path').join(__dirname, 'db.json'), JSON.stringify(db, null, 4), function(err) {
+fs.writeFile(require('path').join(process.env.HOME, '.todolist.db.json'), JSON.stringify(db, null, 4), function(err) {
     ;
 });
