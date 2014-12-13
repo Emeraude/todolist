@@ -1,0 +1,24 @@
+{
+    "color": true,
+    "last_id": 3,
+    "severity_colors": [
+        "white",
+        "yellow",
+        "red"
+    ],
+    "severity_names": [
+        "LOW",
+        "NORMAL",
+        "HIGH"
+    ],
+    "values": [
+        null,
+        null,
+        {
+            "id": 3,
+            "severity": 2,
+            "content": "toto",
+            "added": "2014-12-12T22:34:07.149Z"
+        }
+    ]
+}
