@@ -37,7 +37,7 @@ function printBySeverity(severity) {
 
 function compactPrint(severity) {
     var string = '';
-    _.eachRight(severity, function(i) {
+    _.each(severity, function(i) {
 	var count = 0;
 	_.each(db.values, function(j) {
 	    if (j && j.severity == i)
